@@ -41,8 +41,7 @@ main() {
     */
     for (i = 0; i < nValues; i += 1) {
         printf("?");
-        scanf("%d", array + 1);
-        if (scanf("%d", array + 1) != 1) {
+        if (scanf("%d", array + i) != 1) {
             printf("Error reading value #%d\n", i);
             free(array);
             exit(EXIT_FAILURE);
